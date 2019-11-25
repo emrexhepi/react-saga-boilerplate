@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Router } from 'react-router-dom';
+// import { Router } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 
 /**
