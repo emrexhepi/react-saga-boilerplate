@@ -61,6 +61,7 @@ module.exports = {
         "react/jsx-indent": [2, 4 ],
         "react/jsx-indent-props": [2, 4],
         "react/jsx-filename-extension": 0,
+        "react/jsx-props-no-spreading": 0,
         "react/prefer-stateless-function": 1,
         "react/destructuring-assignment": 0,
         "react/forbid-prop-types": 0,

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { Router } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 
 /**
@@ -9,18 +9,20 @@ import { ConnectedRouter } from 'connected-react-router';
 import MainLayout from 'layouts/MainLayout';
 
 /**
- * Components import
+ * Pages Import
  */
-import { Col } from 'reactstrap';
+import {
+    Home
+} from 'pages';
 
 function App({ history }) {
     return (
         <ConnectedRouter history={history}>
-            <MainLayout>
-                <Col xs="12">
-                    <h2>Here goes the Content!</h2>
-                </Col>
-            </MainLayout>
+            <Switch>
+                <MainLayout>
+                    <Route exact path="/" component={(props) => (<Home {...props} />)} />
+                </MainLayout>
+            </Switch>
         </ConnectedRouter>
     );
 }
